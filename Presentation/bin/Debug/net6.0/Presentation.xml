@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:Presentation.Controllers.CategoryController.GetAll">
+            <summary>
+            Kateqoriyaların siyahısını qaytarır
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Presentation.Controllers.CategoryController.Get(System.Int32)">
+            <summary>
+            Kateqoriyanın id-ə görə tapılması üçün istifadə olunur
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentation.Controllers.CategoryController.Create(Business.DTOs.Category.Request.CategoryCreateDTO)">
+            <summary>
+            Kateqoriyanın yaradılması üçün istifadə olunur
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Presentation.Controllers.CategoryController.Update(Business.DTOs.Category.Request.CategoryUpdateDTO)">
+            <summary>
+            Kateqoriya redaktə edilməsi üçün istifadə olunur
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Presentation.Controllers.CategoryController.Delete(System.Int32)">
+            <summary>
+            Kateqoriyanın silinməsi üçün istifadə olunur
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
