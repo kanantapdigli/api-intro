@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Business.Validators.Category
 {
-    internal class CategoryCreateDTOValidator : AbstractValidator<CategoryCreateDTO>
+    public class CategoryCreateDTOValidator : AbstractValidator<CategoryCreateDTO>
     {
         public CategoryCreateDTOValidator()
         {

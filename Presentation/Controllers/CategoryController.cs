@@ -1,11 +1,14 @@
 ﻿using Business.DTOs.Category.Request;
 using Business.Services.Abstraction;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
@@ -20,7 +23,7 @@ namespace Presentation.Controllers
         /// Kateqoriyaların siyahısını qaytarır
         /// </summary>
         /// <returns></returns>
-#endregion
+        #endregion
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

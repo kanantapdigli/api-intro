@@ -4,6 +4,19 @@
         <name>Presentation</name>
     </assembly>
     <members>
+        <member name="M:Presentation.Controllers.AuthController.Register(Business.DTOs.Auth.Request.AuthRegisterDTO)">
+            <summary>
+            İstifadəçinin qeydiyyatdan keçməsi üçün istifadə olunur
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Presentation.Controllers.AuthController.Login(Business.DTOs.Auth.Request.AuthLoginDTO)">
+            <summary>
+            İstifadəçinin daxil olması üçün istifadə olunur
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:Presentation.Controllers.CategoryController.GetAll">
             <summary>
             Kateqoriyaların siyahısını qaytarır
